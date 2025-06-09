@@ -1,0 +1,40 @@
+.traditions__section {
+    padding-top: 96px;
+  }
+  .traditions__container {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  .traditions__content {
+    max-width: 710px;
+    padding-bottom: 42px;
+  }
+  .traditions__title {
+    margin-bottom: 42px;
+  }
+  .traditions__list {
+    color: var(--color-primary-light);
+    background-color: var(--color-brand-normal);
+  }
+  
+  .section__title {
+    color: var(--color-primary-dark);
+    font-size: 64px;
+    font-weight: var(--font-weight-bald);
+    line-height: 1.3;
+  }
+  .section__title.centered {
+    text-align: center;
+  }
+  .traditions__text {
+    margin-bottom: 42px;
+  }
+  .traditions__text .brand {
+    color: var(--color-brand-normal);
+    font-weight: var(--font-weight-secondary);
+  }
+  
+  .limited {
+    max-width: 385px;
+  }

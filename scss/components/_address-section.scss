@@ -1,0 +1,18 @@
+.address__link {
+  color: var(--color-primary-light);
+  font-size: 16px;
+  font-weight: 300;
+}
+.address__link:hover {
+  color: var(--color-brand-normal);
+}
+
+.address__icon {
+  fill: var(--color-primary-light);
+}
+.address__icon:hover {
+  fill: var(--color-brand-normal);
+}
+.address__copyright {
+  font-size: var(--font-size-14px);
+}

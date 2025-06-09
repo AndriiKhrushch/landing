@@ -1,0 +1,25 @@
+.uppercase {
+  text-transform: uppercase;
+}
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.accent {
+  color: var(--color-brand-dark);
+}
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.logo__img {
+  width: 108px;
+  height: 57px;
+}
