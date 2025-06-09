@@ -123,7 +123,7 @@ ul {
       rgba(18, 18, 17, 0.6) 58.46%,
       rgba(18, 18, 17, 0) 90.36%
     ),
-    url(../images/hero-background.jpg);
+    url(./images/hero-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -344,7 +344,7 @@ advantages__list-item {
 /* footer */
 .footer {
   background-color: var(--color-primary-dark);
-  background-image: url(/images/footer-background.jpg);
+  background-image: url(./images/footer-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -361,12 +361,12 @@ advantages__list-item {
 .footer::before {
   width: 180px;
   height: 120px;
-  background-image: url(/images/bread-1.png);
+  background-image: url(./images/bread-1.png);
 }
 .footer::after {
   width: 380px;
   height: 190px;
-  background-image: url(/images/bread-2.png);
+  background-image: url(./images/bread-2.png);
   right: 0;
 }
 .footer__container {
