@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Odibee+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="header">
@@ -86,7 +86,11 @@
                 обслуговування!
               </p>
             </div>
-            <img src="./images/baked-bread.jpg" alt="baked-bread" />
+            <img
+              class="traditons__photo"
+              src="./images/baked-bread.jpg"
+              alt="baked-bread"
+            />
           </div>
         </div>
       </section>
@@ -206,7 +210,7 @@
                 Приєднуйся до мережі пекарень
               </h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-              <form name="contact__form" autocomplete="off" novalidate>
+              <form name="contact__form" autocomplete="on">
                 <div class="form__field">
                   <label class="form__label visually-hidden" for="user__name"
                     >Ім’я</label
@@ -217,6 +221,7 @@
                     name="user__name"
                     id="user__name"
                     placeholder="Ім’я"
+                    required
                   />
                 </div>
 
@@ -230,6 +235,7 @@
                     name="user__tel"
                     id="user__tel"
                     placeholder="Телефон"
+                    required
                   />
                 </div>
 
@@ -243,6 +249,7 @@
                     name="user__email"
                     id="user__email"
                     placeholder="Електрона пошта"
+                    required
                   />
                 </div>
                 <button class="button form__button" type="submit">
@@ -342,7 +349,7 @@
         <button class="modal__button-close" type="button">Close</button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <form name="modal__form" autocomplete="off" novalidate>
+        <form name="modal__form" autocomplete="on">
           <div class="form__field">
             <label class="form__label visually-hidden" for="user__name"
               >Ім’я</label
@@ -353,6 +360,7 @@
               name="user__name"
               id="user__name"
               placeholder="Ім’я"
+              required
             />
           </div>
 
@@ -366,6 +374,7 @@
               name="user__tel"
               id="user__tel"
               placeholder="Телефон"
+              required
             />
           </div>
 
@@ -379,6 +388,7 @@
               name="user__email"
               id="user__email"
               placeholder="Електрона пошта"
+              required
             />
           </div>
           <button class="button form__button" type="submit">
