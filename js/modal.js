@@ -1,6 +1,6 @@
 const modal = document.querySelector(".backdrop");
-const modalBtnOpen = document.querySelector(".modal__btn-open");
-const modalBtnClose = document.querySelector(".modal__button-close");
+const modalBtnOpen = document.querySelector(".modal-btn-open");
+const modalBtnClose = document.querySelector(".modal-close-btn");
 
 const toggleModal = () => modal.classList.toggle("is__hidden");
 

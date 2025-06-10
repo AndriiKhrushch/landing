@@ -25,6 +25,10 @@
     background-image: url(../images/bread-2.png);
     right: 0;
   }
+  .address__copyright{
+
+    color: var(--color-secondary-dark);
+  }
   .footer__container {
     display: flex;
     gap: 20px;

@@ -1,24 +1,24 @@
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-top: 32px;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
   
-  .header__container {
+  &__container {
     display: flex;
     align-items: center;
-    gap: 40px;
   }
-  .header__nav {
+  &__nav {
     display: flex;
     align-items: center;
     flex-grow: 1;
+    gap: 40px;
   }
-  .header__menu {
+  &__menu {
     display: flex;
     gap: 64px;
     flex-grow: 1;
     justify-content: center;
   }
+}

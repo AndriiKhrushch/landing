@@ -1,19 +1,26 @@
-.contact__section {
+.contact-section {
   padding-bottom: 96px;
-}
-.contact__container {
-  display: flex;
-  gap: 32px;
-}
-.contact__title {
-  margin-bottom: 16px;
-  margin-top: 0;
-}
-.contact__form {
-  width: 50%;
-}
-.contact__map {
-  flex-shrink: 0;
-  border: none;
-  border-radius: 16px;
+  &__container {
+    display: flex;
+    gap: 32px;
+  }
+  &__title {
+    margin-bottom: 16px;
+    margin-top: 0;
+  }
+  &__form {
+    flex-basis: 1;
+  }
+  &__form-field {
+    margin-bottom: 24px;
+  }
+  &__map {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+  }
+  &__button {
+    display: block;
+    margin: 0 auto 16px;
+  }
 }
