@@ -9,10 +9,15 @@ body {
   background-color: var(--color-primary-light);
   font-family: "Montserrat";
   font-size: 18px;
-  font-weight: var(--font-weight-primary);
+  font-weight: 300;
   line-height: 1.5;
   margin: 0;
   padding: 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 18px;
+    font-weight: var(--font-weight-primary);
+  }
 }
 a {
   display: inline-block;

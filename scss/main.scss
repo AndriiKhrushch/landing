@@ -4,20 +4,22 @@
 @import "utils/utils";
 @import "utils/texts";
 
-@import "components/address-section";
-@import "components/advantages-section";
 @import "components/buttons";
 @import "components/chef-card";
-@import "components/chef-section";
-@import "components/contacts-section";
-@import "components/footer";
 @import "components/form";
-@import "components/form-terms";
-@import "components/format-card";
-@import "components/formats-section";
-@import "components/header";
-@import "components/hero-section";
 @import "components/links";
-@import "components/modal";
-@import "components/section";
-@import "components/traditions-section";
+
+@import "layouts/address-section";
+@import "layouts/advantages-section";
+@import "layouts/chef-section";
+@import "layouts/contacts-section";
+@import "layouts/footer";
+@import "components/format-card";
+@import "layouts/formats-section";
+@import "layouts/form-terms";
+@import "layouts/header";
+@import "layouts/hero-section";
+@import "layouts/mobile-menu";
+@import "layouts/modal";
+@import "layouts/section";
+@import "layouts/traditions-section";
