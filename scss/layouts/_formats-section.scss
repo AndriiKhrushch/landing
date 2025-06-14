@@ -1,13 +1,16 @@
 .formats-section {
   &__slider {
     display: flex;
-    gap: 32px;
     align-items: center;
+    justify-content: center;
+    gap: 16px;
+    position: relative;
+    overflow: hidden;
   }
   &__container {
-    overflow-x: hidden;
-    overflow-y: visible;
-    border-radius: 16px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
   }
 
   &__title {
@@ -15,7 +18,13 @@
   }
 
   &__list {
-    margin-bottom: 32px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    width: calc((100% - 40px) / 3);
+    flex-shrink: 0;
   }
 
   &__button {
@@ -24,5 +33,19 @@
     @media screen and (min-width: $bp-tablet) {
       display: flex;
     }
+  }
+}
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+}
+@media (min-width: $bp-tablet) {
+  .swiper-slide {
+    width: calc((100% - 20px) / 2);
+  }
+}
+@media (min-width: $bp-desktop) {
+  .swiper-slide {
+    width: calc((100% - 40px) / 3);
   }
 }

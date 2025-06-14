@@ -13,6 +13,7 @@ const swiper = new Swiper(".swiper-container", {
 
   pagination: {
     el: ".pagination",
+    clickable: true,
     bulletClass: "pagination__button",
     bulletActiveClass: "pagination__button-active",
   },
