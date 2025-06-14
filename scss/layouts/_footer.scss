@@ -1,47 +1,71 @@
 .footer {
-    background-color: var(--color-primary-dark);
-    background-image: url(../images/footer-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 32px 0;
-    position: relative;
+  background-color: var(--color-primary-dark);
+  background-image: url(../images/footer-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 32px 0;
+  position: relative;
+
+  @media screen and (min-width: $bp-tablet) {
   }
-  .footer::before,
-  .footer::after {
+
+  &::before,
+  &::after {
     position: absolute;
     background-repeat: no-repeat;
     bottom: 0;
     content: "";
   }
-  .footer::before {
+  &::before {
     width: 180px;
     height: 120px;
     background-image: url(../images/bread-1.png);
   }
-  .footer::after {
+  &::after {
     width: 380px;
     height: 190px;
     background-image: url(../images/bread-2.png);
     right: 0;
   }
-  .address__copyright{
 
+  &__container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
+  }
+  &__nav,
+  &__address {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: 50%;
+      flex-direction: row;
+      text-align: left;
+    }
+  }
+  &__address-copyright {
     color: var(--color-secondary-dark);
   }
-  .footer__container {
-    display: flex;
-    gap: 20px;
-  }
-  .footer__nav,
-  .footer__address {
-    display: flex;
-    flex-basis: 50%;
-    gap: 20px;
-  }
-  .address__contacts,
-  .address__info,
-  .footer__menu,
-  .footer__logo {
+  &__address-contacts,
+  &__address-info,
+  &__menu,
+  &__logo {
     flex-grow: 1;
   }
+
+
+  &__address-icon {
+    fill: var(--color-primary-light);
+  }
+  &__address-icon:hover {
+    fill: var(--color-brand-normal);
+  }
+}

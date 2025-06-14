@@ -3,6 +3,11 @@
   &__container {
     display: flex;
     gap: 32px;
+    flex-direction: column;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 24px;
+    }
   }
   &__title {
     margin-bottom: 16px;
@@ -15,9 +20,29 @@
     margin-bottom: 24px;
   }
   &__map {
-    flex-shrink: 0;
+    
     border: none;
-    border-radius: 16px;
+    height: 176px;
+    width: 100%;
+    border-radius: 0;
+    margin: 0 auto;
+
+
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 45%;
+      height: 35em;
+      border-radius: 16px;
+      flex-shrink: 1;
+      
+    }
+    @media screen and (min-width: $bp-desktop) {
+      width: 50%;
+      height: 31em;
+      border-radius: 16px;
+      flex-shrink: 0;
+      
+    }
   }
   &__button {
     display: block;
