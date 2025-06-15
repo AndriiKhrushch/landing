@@ -5,6 +5,8 @@
 }
 
 html {
+  overflow-y: scroll;
+
   scroll-behavior: smooth;
 }
 
@@ -24,15 +26,6 @@ body {
   }
 }
 
-body::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
-}
-
-body {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
 a {
   display: inline-block;
   text-decoration: none;
