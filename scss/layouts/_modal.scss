@@ -17,6 +17,9 @@
     pointer-events: none;
   }
 }
+.no-scroll {
+  overflow: hidden;
+}
 .modal {
   width: 100%;
   max-width: 880px;
@@ -27,7 +30,9 @@
   border-radius: 32px;
   position: relative;
   overflow-y: auto;
-
+  & h2 {
+    margin-top: 32px;
+  }
   @media screen and (min-width: $bp-tablet) {
     padding: 128px;
   }
@@ -43,4 +48,32 @@
   &__button {
     margin: 0 auto 24px;
   }
+
+  &__animation {
+    position: absolute;
+    right: 0;
+  }
+  
+  &__animation svg {
+    width: 137px;
+    height: 137px;
+  }
+  
+  .circle-text {
+    transform-origin: 50% 50%;           
+    animation: spin 8s linear infinite;   
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  
+  .circle-text textPath {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    fill: #31261A;
+    letter-spacing: 2px;
+  }
+  
 }

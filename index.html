@@ -50,15 +50,12 @@
             Замовити дзвінок
           </button>
           <button type="button" class="header__burger menu-btn-open">
-            <svg class="address__icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
           </button>
           <div class="mobile-menu">
             <button type="button" class="mobile-menu__btn-close menu-btn-close">
-              <svg class="address__icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-close"></use>
-              </svg>
             </button>
           </div>
         </div>
@@ -471,9 +468,7 @@
               <a class="link" href="#" target="_blank"
                 >Політика конфіденційності
               </a>
-              <p class="footer__address-copyright">
-                &copy; 2022 Дані захищені
-              </p>
+              <p class="footer__address-copyright">&copy; 2022 Дані захищені</p>
             </div>
           </address>
         </div>
@@ -537,6 +532,39 @@
               >з політикою конфіденційності</a
             >
           </p>
+          <div class="modal__animation">
+            <svg viewBox="0 0 300 300">
+              <defs>
+                <path
+                  id="circlePath"
+                  d="M150,150
+                     m-120,0
+                     a120,120 0 1,1 240,0
+                     a120,120 0 1,1 -240,0"
+                />
+
+                <clipPath id="clipCircle">
+                  <circle cx="150" cy="150" r="60" />
+                </clipPath>
+              </defs>
+
+              <image
+                href="./images/oleksiy-hlebushek.jpg"
+                x="90"
+                y="90"
+                width="150"
+                height="120"
+                clip-path="url(#clipCircle)"
+                preserveAspectRatio="xMidYMid slice"
+              />
+
+              <text class="circle-text">
+                <textPath href="#circlePath" startOffset="0%">
+                  Олексій – наш хлєбушек – Олексій – наш хлєбушек – Олексій – наш хлєбушек
+                </textPath>
+              </text>
+            </svg>
+          </div>
         </form>
       </div>
     </div>

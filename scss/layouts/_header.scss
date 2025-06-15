@@ -38,15 +38,21 @@
   }
 
   &__burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 24px;
-    height: 24px;
+    height: 18px;
     padding: 0;
-    background-color: transparent;
     border: none;
-    fill: var(--color-primary-light);
-
+    background: none;
+    cursor: pointer;
+    z-index: 1000;
     @media screen and (min-width: $bp-desktop) {
       display: none;
+    }
+    &.active .burger-line {
+      background-color: var(--color-primary-dark); 
     }
   }
 }

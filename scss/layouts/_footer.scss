@@ -53,6 +53,7 @@
   }
   &__address-copyright {
     color: var(--color-secondary-dark);
+    font-size: 13px;
   }
   &__address-contacts,
   &__address-info,
@@ -61,11 +62,16 @@
     flex-grow: 1;
   }
 
-
+  &__logo {
+    margin-bottom: 32px;
+  }
   &__address-icon {
     fill: var(--color-primary-light);
   }
   &__address-icon:hover {
     fill: var(--color-brand-normal);
+  }
+  &__address-icons a:last-child {
+    padding-left: 22px;
   }
 }
