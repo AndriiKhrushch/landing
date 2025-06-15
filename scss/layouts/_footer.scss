@@ -12,16 +12,21 @@
 
   &::before,
   &::after {
-    position: absolute;
-    background-repeat: no-repeat;
-    bottom: 0;
-    content: "";
+    content: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      position: absolute;
+      background-repeat: no-repeat;
+      bottom: 0;
+      content: "";
+    }
   }
   &::before {
     width: 180px;
     height: 120px;
     background-image: url(../images/bread-1.png);
   }
+
   &::after {
     width: 380px;
     height: 190px;
