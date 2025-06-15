@@ -23,6 +23,16 @@ body {
     font-weight: var(--font-weight-primary);
   }
 }
+
+body::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
 a {
   display: inline-block;
   text-decoration: none;
