@@ -1,12 +1,21 @@
 const mobileMenu = document.querySelector(".mobile-menu");
-const menuBtnOpen = document.querySelector(".menu-btn-open");
+const btns = document.querySelectorAll(".menu-btn-open, .menu-btn-close");
+const menuLinks = document.querySelectorAll(".mobile-menu__list .link");
 
 const toggleMenu = () => {
   mobileMenu.classList.toggle("is-open");
-  menuBtnOpen.classList.toggle("active");
+  btns.forEach((b) => b.classList.toggle("active"));
+  document.body.style.overflow = mobileMenu.classList.contains("is-open")
+    ? "hidden"
+    : "auto";
 };
 
-menuBtnOpen.addEventListener("click", toggleMenu);
+btns.forEach((btn) => btn.addEventListener("click", toggleMenu));
 
-const menuBtnClose = document.querySelector(".menu-btn-close");
-menuBtnClose.addEventListener("click", toggleMenu);
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (mobileMenu.classList.contains("is-open")) {
+      toggleMenu();
+    }
+  });
+});

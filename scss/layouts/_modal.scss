@@ -41,6 +41,8 @@
     position: absolute;
     top: 40px;
     right: 40px;
+    border: none;
+    background-color: var(--color-primary-light);
   }
   &__form-field {
     margin-bottom: 32px;
@@ -52,28 +54,41 @@
   &__animation {
     position: absolute;
     right: 0;
+    display: none;
+    & svg {
+      width: 137px;
+      height: 137px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      position: absolute;
+      right: 0;
+      display: block;
+    }
   }
-  
-  &__animation svg {
-    width: 137px;
-    height: 137px;
-  }
-  
+
   .circle-text {
-    transform-origin: 50% 50%;           
-    animation: spin 8s linear infinite;   
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      transform-origin: 50% 50%;
+      animation: spin 8s linear infinite;
+      display: block;
+    }
   }
-  
+
   @keyframes spin {
-    from { transform: rotate(0deg); }
-    to   { transform: rotate(360deg); }
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
-  
+
   .circle-text textPath {
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
-    fill: #31261A;
-    letter-spacing: 2px;
+    fill: #31261a;
+    letter-spacing: 3px;
   }
-  
 }
